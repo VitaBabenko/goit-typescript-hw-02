@@ -12,7 +12,7 @@ class Component<T extends PropsComponent> {
   }
 }
 
-class Page extends Component<{ title: string }> {
+class Page extends Component<PropsComponent> {
   pageInfo () {
     console.log(this.props.title);
   }
